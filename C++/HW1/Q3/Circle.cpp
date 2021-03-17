@@ -14,8 +14,7 @@ Circle::Point::Point()
 }
 Circle::Circle(int x, int y, int r)
 {
-    Point center = Point(x,y);
-    _center = center;
+    Point _center(x,y);
     _r = r;
 }
 Circle::Circle(){};

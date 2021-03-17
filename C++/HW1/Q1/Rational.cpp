@@ -28,11 +28,13 @@ void Rational::setNumerator(int numerator)
 	}
 void Rational::setDenominator(int denominator)
 	{
+		if(denominator==0)
+		denominator=1;
 		_denominator = denominator;
 	}
 void Rational::print()
 	{
-		std::cout << _numerator << '/' << _denominator;
+		std::cout << _numerator << '/' << _denominator << ' ';
 	}
 Rational Rational::reduction()
 	{

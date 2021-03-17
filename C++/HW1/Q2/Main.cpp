@@ -3,7 +3,7 @@
 
 int main()
 {
-    int SSN, ssnChecker, hours;
+    int SSN, hours;
     char name[21];
     float wage, donations;
     Employee highEarn;
@@ -23,17 +23,6 @@ int main()
         std::cin >> wage;
         std::cin >> hours;
         std::cin >> donations;
-        ssnChecker = SSN;
-        while(ssnChecker)
-        {
-            ssnChecker/=10;
-            digits ++;
-        }
-        if(digits!=9)
-        {
-            std::cout << "ERROR" << std::endl;
-            continue;
-        }
         if(wage<0 || hours < 0 || donations < 0)
         {
             std::cout << "ERROR" << std::endl;
